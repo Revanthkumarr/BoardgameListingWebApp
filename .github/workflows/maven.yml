@@ -45,5 +45,5 @@ jobs:
           -Dsonar.java.binaries=.
     - name: run docker image
       run:
-        docker run -d -p 8083:8000 samuji/board-game:v1
+        docker run -d -p 8087:8000 samuji/board-game:v1
     
