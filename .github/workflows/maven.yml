@@ -41,5 +41,5 @@ jobs:
       with:
         args: >
           -Dsonar.projectKey=Board-game
-          -Dsonar.java.binaries .
+          -Dsonar.java.binaries=.
     
