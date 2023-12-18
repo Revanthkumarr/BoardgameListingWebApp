@@ -30,7 +30,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: build and push docker image
       run: |
-        docker build -t board-game .
+        docker build -t board-game:v1 .
         docker tag board-game:v1 samuji/board-game:v1
         docker push samuji/board-game:v1
     - name: Analyze with sonarqube 
