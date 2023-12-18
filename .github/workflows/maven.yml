@@ -44,7 +44,7 @@ jobs:
           -Dsonar.projectKey=Board-game
           -Dsonar.java.binaries=.
     - name: run docker image
-      run:
+      run: |
         docker run -d --name bod -p 8090:8000 samuji/board-game:v1
         docker stop $(docker ps -aq)
     
